@@ -1,0 +1,220 @@
+#スーパーダンガンロンパ2 さよなら絶望学園 Anniversary Editionで使うファイル
+#"#"以降は、コメントとして認識される。つまり使いたい機能があれば#を抜けばOK
+
+#GameSetting.BuildType=Release
+#InitializeScene.IsImportDemoSaveData = true # デモ用のセーブデータを入れる
+#ResourceCache.EnableLoadDirect = true # アセットバンドルを作成しないで直接読み込むのを有効にする
+#ResourceCache.LogEnabled = true # ResourceCacheのログを表示する
+#GameSetting.IsDr1=false # ダンガンロンパ1か？trueにすると起動しなくなります
+
+#GameManager.LogEnabled = true # GameManagerのログを出力する
+#GameManager.ForceFrameSkip = true # フレームスキップを強制的に発生させる
+#GameManager.MaxProcessFrame = 4 # フレームスキップの最大数
+#GameManager.ShowFrameApi = false # dll側のframeStartのmessageをログに出力させるならtrueにする(default:false)
+#GameManager.ShowMessageApi = false # dll側のfreeMessageのmessageをログに出力させるならtrueにする(default:false)
+
+#ResourceCache.SyncFileAccess = true # 同期ファイルアクセスモードを有効にするか(true:同期 false:非同期)
+
+#InitializeScene.BootLockerEnabled = true # ブートロックを表示するかどうか
+
+#Unicom.TimeoutMilliseconds = 3000 # ネイティブとの通信のタイムアウトの時間（デフォルトは3000）
+
+#InitializeScene.TitleSelectorEnabled = true # タイトルセレクター(DR1/DR2の切り替え等)の有効化
+
+#MtbView.OnePunch = true # マシンガントークバトルで敵を一撃で倒す
+#MtbView.Immortal = true # マシンガントークバトルでダメージを受けない
+
+#NonstopGironView.TrialDead = true # 裁判のミニゲームで一撃死
+#NonstopGironView.TimeOver = true # 裁判のミニゲームでタイムオーバーになる
+
+#AppBrowser.ShowCurtain = true # 16:9の外を隠すカーテンを赤くしてわかりやすくする
+
+#ClimaxInferView.SkipInfer = true # クライマックス推理の推論を飛ばす
+#ClimaxInferView.NoFailure = true # クライマックス推理で間違っていても正解にする
+
+#BriefingView.Skip = true # すぐに裁判開始
+
+MoviePlayerView.SkipOpening = true #オープニングムービーを飛ばす
+
+#AudioManager.SendPlayEndSec = 0.5 #再生終了通知の遅延時間(秒)
+
+GameSetting.DebugMenuSpeedupEnabled = true # 高速化ボタン
+GameSetting.DebugMenuShowButton = true # DEVボタン
+GameSetting.DebugAllLanguageLoad = true
+GameSetting.DebugMenuEnabled = true # デバッグメニューが有効
+#GameSetting.HidePadUi = true # パッド用のUIを非表示にするかどうか（デバッグ用）
+#GameSetting.DebugAutoLoadNo = 1 # 自動的に番号指定したデータをロードする（デバッグ用）0:無効 1以上:有効
+#GameSetting.DebugAutoSelectMenuNo = 0 # 自動的に番号指定したメニューを選択する(デバッグ用) 0:CONTINUE 1:CHAPTER 2:SCHOOL MODE ...
+
+#===========================================================
+# ダウンロードなし版の設定
+#===========================================================
+#InitializeDownloadPanel.UseEmbededFile = true # OBBファイルを使用する（Androidでのみ使用）
+#InitializeDownloadPanel.UseEmbededFileAsStreamingAsset = true # UseEmbededFile==trueの場合に、OBB(Android相当)かStreamingAssets(iOS相当)か(Windowsのエディタでデバッグ時のみ使用)
+
+
+#===========================================================
+# 選択肢
+#===========================================================
+#SelectView.WaitSecond = 1.0 # 選択肢が表示されてから入力を受け付けるまでの待ち時間
+#SelectView.WaitSecondForYesNo = 2.0 # はい、いいえの選択肢が表示されてから入力を受け付けるまでの待ち時間# サバイバルモード
+#SurvivalTitleView.ForceContinue = true # サバイバルモードでコンティニューを自動で選ぶ
+
+#SurvivalTitleView.ItemMax = true # サバイバルモードのアイテムを3個追加
+#SurvivalActionSelectView.ShortcutNum = 0 # 行動選択ショートカット（上からn番目を選ぶ）
+
+#SelectView.AutoSelect=2 # 選択肢を自動で選ぶ
+#MessageView.AutoSkip = true # メッセージをオートで送る
+
+#===========================================================
+# デバッグログ情報
+#===========================================================
+# SpriteManager.ShowErrorTextureInfo = true # textureエラーを表示するならtrueにする
+# SpriteManager.UseDummyTexture = true # spriteに対応するtextureが見つからなかったら板ポリゴンを貼るならtrueにする
+
+# AudioManager.ShowDebugInfoBgm = true   # BGM関連のログを表示するならtrueにする
+# AudioManager.ShowDebugInfoSe = true    # SE関連のログを表示するならtrueにする
+# AudioManager.ShowDebugInfoVoice = true # Voice関連のログを表示するならtrueにする
+# AudioManager.ShowDebugInfoMixer = true # mixer関連のログを表示するならtrueにする
+
+# VideoManager.ShowDebugInfo = true # video関連のログを表示するならtrueにする
+
+# CameraManager.ShowDebugInfo = true # camera関連のログを表示するならtrueにする
+
+#===========================================================
+# スクリーンショットデータをtempに保存する
+#===========================================================
+# PostEffectCamera2D.SaveScreenshot = true  # breakなどのscreenshot
+# TouchMaterialRender.SaveScreenshot = true # touchした時のscreenshot
+
+#===========================================================
+# ミニゲーム（DRS2）
+#===========================================================
+#GameSetting.TrialDead = true # ミニゲームでタイムオーバーになる
+#GameSetting.TrialTimeOut = true #ミニゲームで発言力0になる
+
+#===========================================================
+# タイトル画面のメインメニュー（DRS2）
+#===========================================================
+#Dr2MainMenuView.AutoSelectMain = 0 # トップ階層で自動的にn番目を選ぶ
+#Dr2CheckWindowView.AutoSelect = 0 # ダイアログで自動的にn番目を選ぶ
+
+#SaveDataManager.SyncEnabled = false # クラウドセーブを有効化するかどうか
+
+# 基本の設定
+
+#===========================================================
+
+# ノンストップ議論
+
+#===========================================================
+
+
+
+# 弾丸リストを表示するまでのロングタップの時間[秒]
+
+NonstopGironView.SmallCylinderLongtapThresholdSecond = 0.2
+
+
+
+# サイレンサーのフリックの敷居値[UI座標系]
+
+NonstopGironView.SilencerFlickThresholdLength = 40
+
+
+
+# スピードアップするまでの長押し時間[秒]
+
+NonstopGironView.SpeedupThresholdSecond = 0.3
+
+
+
+
+
+# コトダマ（フォントが飛んでいく演出）の速度、Steam版の速度を1.0とする
+
+NonstopGironView.KotodamaSpeedFont = 1.0
+
+
+
+# コトダマ（弾丸が飛んでいく演出）の速度、Steam版の速度を1.0とする
+
+NonstopGironView.KotodamaSpeedBullet = 3.0
+
+
+
+#===========================================================
+
+# 人物指名
+
+#===========================================================
+
+# 犯人当てのフリック選択の閾値
+
+CriminalView.FlickThresholdLength = 20
+
+
+
+# 犯人当てで、押して離したときにフリックと見なす秒数
+
+CriminalView.FlickThresholdSecond = 0.2
+
+
+
+#===========================================================
+
+# クライマックス推理
+
+#===========================================================
+
+# 漫画にセットしたコマを掴むために必要なタッチ秒数
+
+ClimaxInferView.GrabKomaThresholdSecond = 0.1
+
+
+
+#===========================================================
+
+# マシンガントークバトル
+
+#===========================================================
+
+# MTBのボタンの大きさ（100 = 100%のサイズ）
+
+MtbView.ButtonSize = 100 
+
+
+
+#===========================================================
+
+# 選択肢
+
+#===========================================================
+
+SelectView.WaitSecond = 0.7 # 選択肢が表示されてから入力を受け付けるまでの待ち時間
+
+SelectView.WaitSecondForYesNo = 0.2 # はい、いいえの選択肢が表示されてから入力を受け付けるまでの待ち時間
+
+
+
+
+
+#===========================================================
+
+# その他
+
+#===========================================================
+
+AudioProcessor.VisualizerScale = 3.0 # サウンドビジュアライザの振れ幅
+
+
+
+#===========================================================
+
+# 選択肢（DR2）
+
+#===========================================================
+
+Dr2SelectView.WaitSecond = 0.7 # 選択肢が表示されてから入力を受け付けるまでの待ち時間
+
+Dr2SelectView.WaitSecondForYesNo = 0.2 # はい、いいえの選択肢が表示されてから入力を受け付けるまでの待ち時間
