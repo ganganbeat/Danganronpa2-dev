@@ -5,7 +5,7 @@
 #InitializeScene.IsImportDemoSaveData = true # デモ用のセーブデータを入れる
 #ResourceCache.EnableLoadDirect = true # アセットバンドルを作成しないで直接読み込むのを有効にする
 #ResourceCache.LogEnabled = true # ResourceCacheのログを表示する
-#GameSetting.IsDr1=false # ダンガンロンパ1か？trueにすると起動しなくなります
+#GameSetting.IsDr1=false # ダンガンロンパ1か？
 
 #GameManager.LogEnabled = true # GameManagerのログを出力する
 #GameManager.ForceFrameSkip = true # フレームスキップを強制的に発生させる
